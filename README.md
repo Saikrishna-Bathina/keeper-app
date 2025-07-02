@@ -1,6 +1,6 @@
-# 📝 Notes App
+# 📝 Keeper App
 
-A clean and responsive **Notes Application** built using **React** and **Bootstrap**, allowing users to add and delete notes easily with real-time updates and a card-based UI.
+A clean and responsive **Keeper Application** built using **React** and **Bootstrap**, allowing users to add and delete notes easily with real-time updates and a card-based UI.
 
 ---
 
