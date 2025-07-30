@@ -16,9 +16,12 @@ const AddNote = ({ onAdd }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (note.title.trim() && note.description.trim()) {
+    const { title, description } = note;
+    if (title.trim() && description.trim()) {
       onAdd(note);
       setNote({ title: '', description: '' });
+    } else {
+      alert('Both title and content are required!');
     }
   };
 
