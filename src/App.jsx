@@ -17,6 +17,15 @@ const App = () => {
     ]);
   };
 
+  const editNote = (id, updatedNote) => {
+  setNotes((prevNotes) =>
+    prevNotes.map((note) =>
+      note.key === id ? { ...note, ...updatedNote } : note
+    )
+  );
+};
+
+
   const deleteNote = (id) => {
     setNotes((prevNotes) => prevNotes.filter((note) => note.key !== id));
   };
@@ -34,6 +43,7 @@ const App = () => {
                 title={note.title}
                 description={note.description}
                 onDelete={deleteNote}
+                onEdit={editNote}
               />
             </div>
           ))}
